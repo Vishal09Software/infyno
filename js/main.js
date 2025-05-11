@@ -345,3 +345,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    return parts.length === 2 ? parts.pop().split(';').shift() : null;
+  }
+
+  function acceptCookies() {
+    document.cookie = "cookie_consent=accepted; path=/; max-age=" + 60 * 60 * 24 * 365;
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+
+  function declineCookies() {
+    document.cookie = "cookie_consent=declined; path=/; max-age=" + 60 * 60 * 24 * 365;
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    if (!getCookie('cookie_consent')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  });
