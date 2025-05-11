@@ -366,3 +366,6 @@ function getCookie(name) {
       document.getElementById('cookie-banner').style.display = 'block';
     }
   });
+
+
+  
