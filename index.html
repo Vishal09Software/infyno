@@ -1239,6 +1239,219 @@
         </div>
     </section>
 
+
+    <!-- Portfolio Section with Tabs -->
+    <section id="portfolio" class="py-20 bg-gradient-to-br from-white via-blue-50 to-green-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-fade-in scroll-fade-in">
+                <div class="max-w-2xl mx-auto text-center mb-14">
+                    <span class="inline-block px-4 py-1 mb-4 text-xs font-bold bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full shadow-lg tracking-widest uppercase">Our Work</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-700 via-green-500 to-blue-400 bg-clip-text text-transparent">Showcase Portfolio</h2>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 font-medium">
+                        Discover our best projects in web, app, graphic design, and custom software. Each project is a blend of creativity, technology, and business value.
+                    </p>
+                </div>
+                <!-- Tabs -->
+                <div class="flex justify-center mb-12 gap-2">
+                    <button class="portfolio-tab px-6 py-2 rounded-l-xl border border-r-0 border-gray-200 dark:border-gray-700 bg-primary text-white font-bold shadow-md focus:outline-none transition-all duration-200 hover:scale-105" data-tab="all" id="tab-all">All</button>
+                    <button class="portfolio-tab px-6 py-2 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-bold shadow-md focus:outline-none transition-all duration-200 hover:scale-105" data-tab="web" id="tab-web">Web</button>
+                    <button class="portfolio-tab px-6 py-2 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-bold shadow-md focus:outline-none transition-all duration-200 hover:scale-105" data-tab="app" id="tab-app">App</button>
+                    <button class="portfolio-tab px-6 py-2 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-bold shadow-md focus:outline-none transition-all duration-200 hover:scale-105" data-tab="graphic" id="tab-graphic">Graphic</button>
+                    <button class="portfolio-tab px-6 py-2 rounded-r-xl border border-l-0 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-bold shadow-md focus:outline-none transition-all duration-200 hover:scale-105" data-tab="custom" id="tab-custom">Custom</button>
+                </div>
+                <!-- Portfolio Grid with Lightbox -->
+                <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Web Projects -->
+                    <div class="portfolio-item group" data-category="web">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 dark:border-blue-900 hover:-translate-y-2">
+                            <a href="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80" class="portfolio-lightbox" data-title="Modern Business Website" data-description="A responsive and dynamic website for a leading business, built with React and Tailwind CSS.">
+                                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Modern Business Website" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-blue-700 dark:text-blue-300">Modern Business Website</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A responsive and dynamic website for a leading business, built with React and Tailwind CSS.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full font-semibold">Web</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item group" data-category="web">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 dark:border-blue-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg" class="portfolio-lightbox" data-title="E-commerce Platform" data-description="A scalable e-commerce solution with seamless checkout and product management.">
+                                <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&w=800&q=80" alt="Web Project 2" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-blue-700 dark:text-blue-300">E-commerce Platform</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A scalable e-commerce solution with seamless checkout and product management.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full font-semibold">Web</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item group" data-category="web">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 dark:border-blue-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" class="portfolio-lightbox" data-title="Portfolio Website" data-description="A personal portfolio site with interactive animations and smooth navigation.">
+                                <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&w=800&q=80" alt="Web Project 3" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-blue-700 dark:text-blue-300">Portfolio Website</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A personal portfolio site with interactive animations and smooth navigation.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full font-semibold">Web</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- App Projects -->
+                    <div class="portfolio-item group" data-category="app">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-green-100 dark:border-green-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg" class="portfolio-lightbox" data-title="Fitness Tracker App" data-description="A cross-platform mobile app for tracking workouts and health stats, built with Flutter.">
+                                <img src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&w=800&q=80" alt="App Project 1" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-green-700 dark:text-green-300">Fitness Tracker App</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A cross-platform mobile app for tracking workouts and health stats, built with Flutter.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-green-100 text-green-700 rounded-full font-semibold">App</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item group" data-category="app">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-green-100 dark:border-green-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg" class="portfolio-lightbox" data-title="Food Delivery App" data-description="A user-friendly food delivery app with real-time tracking and secure payments.">
+                                <img src="https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&w=800&q=80" alt="App Project 2" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-green-700 dark:text-green-300">Food Delivery App</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A user-friendly food delivery app with real-time tracking and secure payments.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-green-100 text-green-700 rounded-full font-semibold">App</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item group" data-category="app">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-green-100 dark:border-green-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg" class="portfolio-lightbox" data-title="Social Media App" data-description="A modern social media platform with real-time chat and media sharing features.">
+                                <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&w=800&q=80" alt="App Project 3" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-green-700 dark:text-green-300">Social Media App</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A modern social media platform with real-time chat and media sharing features.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-green-100 text-green-700 rounded-full font-semibold">App</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Graphic Projects -->
+                    <div class="portfolio-item group" data-category="graphic">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-pink-100 dark:border-pink-900 hover:-translate-y-2">
+                            <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=compress&w=800&q=80" class="portfolio-lightbox" data-title="Brand Identity Design" data-description="A unique and memorable brand identity for a startup, including logo and visual assets.">
+                                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=compress&w=800&q=80" alt="Brand Identity Design Project" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-pink-700 dark:text-pink-300">Brand Identity Design</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A unique and memorable brand identity for a startup, including logo and visual assets.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-pink-100 text-pink-700 rounded-full font-semibold">Graphic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item group" data-category="graphic">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-pink-100 dark:border-pink-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/3184436/pexels-photo-3184436.jpeg" class="portfolio-lightbox" data-title="Event Poster Design" data-description="A vibrant and eye-catching poster for a music festival, designed for both print and digital.">
+                                <img src="https://images.pexels.com/photos/3184436/pexels-photo-3184436.jpeg?auto=compress&w=800&q=80" alt="Graphic Project 2" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-pink-700 dark:text-pink-300">Event Poster Design</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A vibrant and eye-catching poster for a music festival, designed for both print and digital.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-pink-100 text-pink-700 rounded-full font-semibold">Graphic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item group" data-category="graphic">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-pink-100 dark:border-pink-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/185933/pexels-photo-185933.jpeg" class="portfolio-lightbox" data-title="Creative Brochure Design" data-description="A visually stunning brochure for a corporate event, blending modern design with brand colors.">
+                                <img src="https://images.pexels.com/photos/185933/pexels-photo-185933.jpeg?auto=compress&w=800&q=80" alt="Graphic Project 3" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-pink-700 dark:text-pink-300">Creative Brochure Design</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A visually stunning brochure for a corporate event, blending modern design with brand colors.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-pink-100 text-pink-700 rounded-full font-semibold">Graphic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Custom Software Projects -->
+                    <div class="portfolio-item group" data-category="custom">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-yellow-100 dark:border-yellow-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/267614/pexels-photo-267614.jpeg" class="portfolio-lightbox" data-title="Payroll Management System" data-description="A robust payroll management system for automating employee salary, tax, and compliance processes.">
+                                <img src="https://images.pexels.com/photos/267614/pexels-photo-267614.jpeg?auto=compress&w=800&q=80" alt="Payroll Management System" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-yellow-700 dark:text-yellow-300">Payroll Management System</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A robust payroll management system for automating employee salary, tax, and compliance processes.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-yellow-100 text-yellow-700 rounded-full font-semibold">Custom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item group" data-category="custom">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-yellow-100 dark:border-yellow-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg" class="portfolio-lightbox" data-title="Inventory Management System" data-description="A comprehensive inventory management solution for tracking stock, orders, and suppliers.">
+                                <img src="https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg?auto=compress&w=800&q=80" alt="Inventory Management System" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-yellow-700 dark:text-yellow-300">Inventory Management System</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A comprehensive inventory management solution for tracking stock, orders, and suppliers.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-yellow-100 text-yellow-700 rounded-full font-semibold">Custom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item group" data-category="custom">
+                        <div class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-yellow-100 dark:border-yellow-900 hover:-translate-y-2">
+                            <a href="https://images.pexels.com/photos/256401/pexels-photo-256401.jpeg" class="portfolio-lightbox" data-title="Learning Management System" data-description="A feature-rich LMS for online courses, student tracking, and assessments.">
+                                <img src="https://images.pexels.com/photos/256401/pexels-photo-256401.jpeg?auto=compress&w=800&q=80" alt="Learning Management System - Study" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            </a>
+                            <div class="p-7">
+                                <h3 class="text-xl font-bold mb-2 text-yellow-700 dark:text-yellow-300">Learning Management System</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A feature-rich LMS for online courses, student tracking, and assessments.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block px-3 py-1 text-xs bg-yellow-100 text-yellow-700 rounded-full font-semibold">Custom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lightbox Modal -->
+                <div id="portfolio-lightbox-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 hidden">
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-2xl max-w-2xl w-full relative p-6">
+                        <button id="lightbox-close" class="absolute top-3 right-3 text-gray-700 dark:text-gray-200 text-2xl font-bold focus:outline-none">&times;</button>
+                        <img id="lightbox-image" src="" alt="" class="w-full rounded mb-4 max-h-[60vh] object-contain">
+                        <h3 id="lightbox-title" class="text-2xl font-bold mb-2"></h3>
+                        <p id="lightbox-description" class="text-gray-600 dark:text-gray-300"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    
+
     <!-- Blog Section -->
     <section id="blog" class="py-20 bg-gray-50 dark:bg-gray-800">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -1825,6 +2038,109 @@
                 const newSlidesToShow = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
                 if (newSlidesToShow !== slidesToShow) {
                     location.reload();
+                }
+            });
+        });
+    </script>
+
+    <!-- Portfolio Tabs & Lightbox Script -->
+    <script>
+        // Tab switching logic with random order for "all"
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.portfolio-tab');
+            const items = Array.from(document.querySelectorAll('.portfolio-item'));
+            const parent = items.length > 0 ? items[0].parentNode : null;
+
+            // Fisher-Yates shuffle
+            function shuffle(array) {
+                let m = array.length, t, i;
+                while (m) {
+                    i = Math.floor(Math.random() * m--);
+                    t = array[m];
+                    array[m] = array[i];
+                    array[i] = t;
+                }
+                return array;
+            }
+
+            function setActiveTab(tabName) {
+                tabs.forEach(tab => {
+                    if (tab.dataset.tab === tabName) {
+                        tab.classList.add('bg-primary', 'text-white');
+                        tab.classList.remove('bg-white', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-200');
+                    } else {
+                        tab.classList.remove('bg-primary', 'text-white');
+                        tab.classList.add('bg-white', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-200');
+                    }
+                });
+
+                if (tabName === 'all' && parent) {
+                    // Shuffle and re-append all items
+                    const shuffled = shuffle([...items]);
+                    shuffled.forEach(item => {
+                        item.style.display = '';
+                        parent.appendChild(item);
+                    });
+                } else {
+                    items.forEach(item => {
+                        if (tabName === 'all' || item.dataset.category === tabName) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                }
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    setActiveTab(this.dataset.tab);
+                });
+            });
+
+            // Set default tab (randomize on load)
+            setActiveTab('all');
+
+            // Lightbox logic
+            const lightboxLinks = document.querySelectorAll('.portfolio-lightbox');
+            const lightboxModal = document.getElementById('portfolio-lightbox-modal');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDescription = document.getElementById('lightbox-description');
+            const lightboxClose = document.getElementById('lightbox-close');
+
+            lightboxLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    lightboxImage.src = this.getAttribute('href');
+                    lightboxTitle.textContent = this.getAttribute('data-title');
+                    lightboxDescription.textContent = this.getAttribute('data-description');
+                    lightboxModal.classList.remove('hidden');
+                    document.body.classList.add('overflow-hidden');
+                });
+            });
+
+            lightboxClose.addEventListener('click', function () {
+                lightboxModal.classList.add('hidden');
+                lightboxImage.src = '';
+                document.body.classList.remove('overflow-hidden');
+            });
+
+            // Close on background click
+            lightboxModal.addEventListener('click', function (e) {
+                if (e.target === lightboxModal) {
+                    lightboxModal.classList.add('hidden');
+                    lightboxImage.src = '';
+                    document.body.classList.remove('overflow-hidden');
+                }
+            });
+
+            // Close on ESC
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !lightboxModal.classList.contains('hidden')) {
+                    lightboxModal.classList.add('hidden');
+                    lightboxImage.src = '';
+                    document.body.classList.remove('overflow-hidden');
                 }
             });
         });
